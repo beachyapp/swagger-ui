@@ -29,6 +29,7 @@
 
   <script type="text/javascript">
     $(function () {
+
       // Pre load translate...
       if(window.SwaggerTranslator) {
         window.SwaggerTranslator.translate();
@@ -39,16 +40,6 @@
         dom_id: "swagger-ui-container",
         supportedSubmitMethods: ['get', 'post', 'put', 'delete', 'patch'],
         onComplete: function(swaggerApi, swaggerUi){
-          if(typeof initOAuth == "function") {
-            initOAuth({
-              clientId: "your-client-id",
-              clientSecret: "your-client-secret",
-              realm: "your-realms",
-              appName: "your-app-name", 
-              scopeSeparator: ","
-            });
-          }
-
           if(window.SwaggerTranslator) {
             window.SwaggerTranslator.translate();
           }
@@ -98,7 +89,7 @@
 <body class="swagger-section">
 <div id='header'>
   <div class="swagger-ui-wrap">
-    <a id="logo" href="http://swagger.io">swagger</a>
+    <a id="logo" href="/">lucille</a>
     <form id='api_selector'>
       <div class='input'><input placeholder="http://example.com/api" id="input_baseUrl" name="baseUrl" type="text"/></div>
       <div class='input'><input placeholder="api_key" id="input_apiKey" name="apiKey" type="text"/></div>
@@ -108,6 +99,11 @@
 </div>
 
 <div id="message-bar" class="swagger-ui-wrap" data-sw-translate>&nbsp;</div>
+
+<div class="swagger-ui-wrap">
+  <h2>These are the v2 REST API docs.</h2>
+  <p><a href="/lucille">View the app docs here.</a></p>
+</div>
 <div id="swagger-ui-container" class="swagger-ui-wrap"></div>
 </body>
 </html>
