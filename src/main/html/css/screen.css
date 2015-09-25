@@ -123,9 +123,10 @@
 .swagger-section .swagger-ui-wrap {
   line-height: 1;
   font-family: "Droid Sans", sans-serif;
-  max-width: 960px;
+  padding: 0 50px;
   margin-left: auto;
   margin-right: auto;
+  min-width: 960px;
 }
 .swagger-section .swagger-ui-wrap b,
 .swagger-section .swagger-ui-wrap strong {
@@ -245,8 +246,8 @@
 }
 .swagger-section .swagger-ui-wrap pre {
   font-family: "Anonymous Pro", "Menlo", "Consolas", "Bitstream Vera Sans Mono", "Courier New", monospace;
-  background-color: #fcf6db;
-  border: 1px solid #e5e0c6;
+  background-color: #fff;
+  border: 1px solid #eee;
   padding: 10px;
 }
 .swagger-section .swagger-ui-wrap pre code {
@@ -351,9 +352,6 @@
 }
 .swagger-section .swagger-ui-wrap .model-signature .propType {
   color: #5555aa;
-}
-.swagger-section .swagger-ui-wrap .model-signature pre:hover {
-  background-color: #ffffdd;
 }
 .swagger-section .swagger-ui-wrap .model-signature pre {
   font-size: .85em;
